@@ -22,7 +22,7 @@ FROM eclipse-temurin:17-jre-alpine
 # Add metadata
 LABEL maintainer="opty-socket"
 LABEL description="WebSocket relay server for client-supervisor communication"
-LABEL version="0.1.0"
+LABEL version="1.0.0"
 
 # Create non-root user for security
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup

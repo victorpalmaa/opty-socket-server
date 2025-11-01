@@ -14,7 +14,7 @@
 
     <groupId>com.opty</groupId>
     <artifactId>opty-socket</artifactId>
-    <version>0.0.0</version>
+    <version>1.0.0</version>
     <name>Opty Socket Server</name>
     <description>Real-time bidirectional communication relay between React front-end applications</description>
 
