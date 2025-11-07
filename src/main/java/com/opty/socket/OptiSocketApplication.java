@@ -10,6 +10,7 @@ package com.opty.socket;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 
@@ -21,6 +22,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @Slf4j
 @SpringBootApplication
 @EnableScheduling
+@EnableMongoRepositories(basePackages = "com.opty.socket.repository")
 public class OptiSocketApplication {
 
     public static void main(String[] args) {
