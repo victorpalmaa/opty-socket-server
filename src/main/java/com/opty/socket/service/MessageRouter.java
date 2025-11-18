@@ -36,6 +36,7 @@ public class MessageRouter {
     // --- ATTRIBUTES ---
     private final SessionManager sessionManager;
     private final ObjectMapper objectMapper;
+    private final MessageStorageService messageStorageService;
 
     /**
      * Routes a message from sender to recipient.
@@ -78,6 +79,8 @@ public class MessageRouter {
                 return false;
             }
 
+            messageStorageService.saveMessage(message);
+             
             // Send message to recipient
             boolean sent = sendMessage(recipientConnection.webSocketSession(), message);
 
